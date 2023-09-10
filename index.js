@@ -2,11 +2,12 @@ const currentUtcTime = document.querySelector('[data-testid="current-utc-time"]'
 const currentDayOfTheWeek = document.querySelector('[data-testid="current-day-of-the-week"]')
 const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
-const date = new Date()
-const day = weekday[date.getDay()]
+function getDay(){
+    const date = new Date()
+    const day = weekday[date.getDay()]
+    currentDayOfTheWeek.textContent = `${day}, `
+}
 
-
-currentDayOfTheWeek.textContent = `${day}, `
 function getTime(){
 
     const date = new Date()
@@ -14,6 +15,6 @@ function getTime(){
     currentUtcTime.textContent =  time
 
 }
-
+getDay()
 setInterval( getTime, 1000)
 

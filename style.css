@@ -1,11 +1,11 @@
 section{
     width: 90%;
-    padding: 20px;
+    padding: 18px;
 }
 
 img {
     width: 40%;
-    border-radius: 5px;
+    border-radius: 50%;
     box-shadow: 0px 0px 10px grey;
 }
 
@@ -21,12 +21,29 @@ h1{
 
 }
 
+a {
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    border: 3px solid blueviolet;
+    padding: 8px 17px;
+    border-radius: 5px;
+}
+
+a:hover {
+
+    box-shadow: 0 0 10px black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: blueviolet;
+    color: black;
+}
+
 #text-container {
     border-left: 4px solid red;
     padding: 10px 20px;
 }
-
-
 
 #date-container {
     width: 18%;
@@ -38,4 +55,10 @@ h1{
 #img-container {
     display: flex;
     justify-content: center;
+}
+
+#github-link-container {
+    display: flex;
+    justify-content: center;
+ 
 }
