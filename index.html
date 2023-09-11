@@ -7,25 +7,33 @@
     <title>Task 1</title>
 </head>
 <body>
-    <section>
-        <div id="text-container">
-            <h1 data-testid="slackUserName">Adekanbi Emmanuel</h1>
-            <p data-testid="myTrack">Frontend Development</p>
-        </div>
+    <main>
+        <section>
+            <div id="text-container">
+                <h1 data-testid="slackUserName">Adekanbi Emmanuel</h1>
+                <p data-testid="myTrack">Frontend Development</p>
+            </div>
+        
+            <div id="img-container">
+                <img src="image.jpg" data-testid="slackDisplayImage" alt="A picture of Adekanbi Emmanuel">
+            </div>
 
-        <div id="img-container">
-            <img src="image.jpg" data-testid="slackDisplayImage" alt="A picture of Adekanbi Emmanuel">
-        </div>
+            <div id="date-container">
+                <p data-testid="currentDayOfTheWeek"></p>
+                <p data-testid="currentUTCTime"></p>
+            </div>
+        </section>
+    </main> 
 
-        <div id="date-container">
-            <p data-testid="currentDayOfTheWeek"></p>
-            <p data-testid="currentUTCTime"></p>
-        </div>
+    <footer>
 
         <div id="github-link-container">
             <a href="https://github.com/dynamic109/HNG-Frontend-Development-Task-1" target="_blank" data-testid="githubURL" >github</a>
         </div>
-    </section>
+        
+    </footer>
+        
+
 
 
     <script src="index.js"></script>
