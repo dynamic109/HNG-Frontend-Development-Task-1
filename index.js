@@ -8,13 +8,13 @@ function getDay(){
     currentDayOfTheWeek.textContent = `${day}, `
 }
 
-function getTime(){
+function getTimeInMilliseconds(){
 
     const date = new Date()
-    const time = date.getMilliseconds()
+    const time = date.getTime()
     currentUtcTime.textContent =  time
 
 }
 getDay()
-setInterval( getTime, 1000)
+setInterval( getTimeInMilliseconds, 1000)
 
